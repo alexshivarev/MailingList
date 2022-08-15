@@ -56,44 +56,6 @@ celery -A notification_service flower --port=5555
 python manage.py test
 ```
 ***
-## Установка проекта с помощью docker-compose
-
-
-1. Склонировать репозиторий с Github
-```
-git clone git@github.com:Witaly3/notification_service.git
-```
-2. Перейти в директорию проекта
-3. В файле .evn заполнить необходимые данные: ```TOKEN = '<your token>'```
-4. Запустить контейнеры 
-``` 
-sudo docker-compose up -d
- ```
-5. Остановка работы контейнеров 
-```
-sudo docker-compose stop
-```
-***
-```http://0.0.0.0:8000/api/``` - api проекта
-
-```http://0.0.0.0:8000/api/clients/``` - клиенты
-
-```http://0.0.0.0:8000/api/mailings/``` - рассылки
-
-```http://0.0.0.0:8000/api/mailings/fullinfo/``` - общая статистика по всем рассылкам
-
-```http://0.0.0.0:8000/api/mailings/<pk>/info/``` - детальная статистика по конкретной рассылке
-
-```http://0.0.0.0:8000/api/messages/``` - сообщения
-
-```http://0.0.0.0:8000/docs/``` - docs проекта
-
-```http://0.0.0.0:5555``` - celery flower
-
-***
-
-**Техзадание:** 
-[https://www.craft.do/s/n6OVYFVUpq0o6L](https://www.craft.do/s/n6OVYFVUpq0o6L)
 
 ## Задача
 
