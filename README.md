@@ -9,7 +9,7 @@
 1. Склонировать репозиторий с Github:
 
 ````
-git clone git@github.com:Witaly3/notification_service.git
+git clone git@github.com/alexshivarev/MailingList.git
 ````
 2. Перейти в директорию проекта
 
